@@ -6,7 +6,7 @@ final class TaskTestingTests: XCTestCase {
         taskTest(priority: .high)
     }
     
-    /// This test would fail on an iPhone 14 Simulator, but not when running it on the Mac.
+    /// This test would fail on an M1 / iOS 14 Simulator. But works on an M1Max / iOS 14 Simulator or if it is run on the Mac.
     func testMediumPriority() async {
         taskTest(priority: .medium)
     }
